@@ -18,7 +18,6 @@
 //       <h2>{count}</h2>
 //       <button onClick={dec}>-</button>
 //       <button onClick={inc}>+</button>
-      
 //     </div>
 //   )
 // }
@@ -36,7 +35,6 @@
 //     <div>
 //       <h1>Disabled-Button</h1>
 //       <button onClick={clicked} disabled={disabled}>yes</button> 
-      
 //     </div>
 //   )
 // }
@@ -48,7 +46,6 @@
 // function App() {
 //   const courses=["HTML","JS","REACT"];
 //   const [selection,setSelection]=useState("");
-
 //   return (
 //     <div>
 //       <select onChange={(e)=>setSelection(e.target.value)}>
@@ -56,7 +53,6 @@
 //         {courses.map((course,index)=>(
 //           <option key={index} value={course}>{course}</option>
 //         ))}
-        
 //       </select>
 //       <h2>you selected:{selection}</h2>
 //     </div>
@@ -101,7 +97,6 @@
 //     <div>
 //       <input type={show ? "text" : "password"}/>
 //       <button onClick={clicked}>show/hide</button>
-      
 //     </div>
 //   )
 // }
@@ -119,7 +114,6 @@
 //     <div>
 //       <input type="text" onChange={show}/>
 //       <h2>{live}</h2>
-      
 //     </div>
 //   )
 // }
@@ -146,7 +140,6 @@
 //       <h1>Random Quote Generator</h1>
 //       <button onClick={qoutegenerator}>Generate Quote</button>
 //       <h2>{quote}</h2>
-      
 //     </div>
 //   )
 // }
@@ -191,14 +184,12 @@
 //     title: "Learn React",
 //     completed: false
 //   })
-
 //   let toggle = ()=>{
 //     setTask({
 //       ...task,
 //       completed: !task.completed
 //     })
 //   }
-
 //   return(
 //     <>
 //       <p>{task.title} - {task.completed ? "Completed" : "Pending"}</p>
@@ -215,7 +206,6 @@
 //     { id: 1, name: "A" },
 //     { id: 2, name: "B" }
 //   ]);
-
 //   let chng = ()=>{
 //     setUsers(
 //       users.map((e)=>(
@@ -223,7 +213,6 @@
 //       ))
 //     )
 //   }
-
 //   return(
 //     <>
 //       <h2>User List</h2>
@@ -244,9 +233,7 @@
 //     department: "",
 //     salary: ""
 //   })
-
 //   let [employee, setEmployee] = useState(null)
-
 //   let handleChange = (e)=>{
 //     let name = e.target.name 
 //     let value = e.target.value
@@ -255,11 +242,9 @@
 //       [name]: value
 //     })
 //   }
-
 //   let handleSubmit = ()=>{
 //     setEmployee(formData)
 //   }
-
 //   let handleReset = ()=>{
 //     setFormData({
 //       name: "",
@@ -268,18 +253,15 @@
 //     })
 //     setEmployee(null)
 //   }
-
 //   return(
 //     <>
 //     <form>
-
 //       <input type="text" placeholder="Enter name" name="name" value={formData.name} onChange={handleChange}/><br /><br />
 //       <input type="text" placeholder="Enter department" name="department" value={formData.department} onChange={handleChange}/><br /><br />
 //       <input type="number" placeholder="Enter salary" name="salary" value={formData.salary} onChange={handleChange}/><br /><br />
 //       <button type="button" onClick={handleSubmit}>Submit</button>
 //       <button type="button" onClick={handleReset}>Reset</button>
 //     </form>
-
 //     {employee ?
 //       <div>
 //         <h3>Employee details: </h3>
@@ -288,7 +270,6 @@
 //         <p>Salary: {employee.salary}</p>
 //       </div>
 //     : ""}
-
 //     </>
 //   )
 // }
@@ -382,7 +363,7 @@
 
 
 //14.router ecommerse
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+//import { BrowserRouter,Routes,Route } from "react-router-dom";
 // import Products from "./Products";
 // import Electronic from "./Electronic";
 // import Clothing from "./Clothing";
@@ -406,7 +387,6 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 //   return (
 //     <div>
 //       <h2>Clothing Products</h2>
-
 //       <ul>
 //         <li>T-Shirt</li>
 //         <li>Jeans</li>
@@ -427,14 +407,12 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 //             </ul>
 //         </div>
 //     )
-
 // }
 // export default Electronics;
 // function Furniture() {
 //   return (
 //     <div>
 //       <h2>Furniture Products</h2>
-
 //       <ul>
 //         <li>Sofa</li>
 //         <li>Chair</li>
@@ -472,7 +450,6 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 // import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 // import Users from "./Users";
 // import UserProfile from "./UserProfile";
-
 // function App() {
 //   return (
 //     <BrowserRouter>
@@ -528,12 +505,10 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 // //Users.jsx
 // import { Link } from "react-router-dom";
 // import users from "./data";
-
 // function Users() {
 //   return (
 //     <div>
 //       <h1>Users List</h1>
-
 //       {users.map((user) => (
 //         <div key={user.id}>
 //           <Link to={`/users/${user.id}`}>
@@ -590,7 +565,7 @@ enum BookStatus {
 
 
 //17.Enum for Seat Types
-enum SeatType {
+//enum SeatType {
 //   Regular,
 //   Premium,
 //   VIP
@@ -635,7 +610,7 @@ enum SeatType {
 
 
 //18.fetch ecommerce
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 // import ProductTable from "./components/ProductTable";
 // function App() {
 //   const [products, setProducts] = useState([]);
@@ -725,7 +700,7 @@ import { useEffect, useState } from "react";
 
 
 //19.password-validator
-import { useState } from "react";
+//import { useState } from "react";
 // function App() {
 //   const [password, setPassword] = useState("");
 //   const firstCapital = /^[A-Z]/.test(password);
@@ -767,8 +742,7 @@ import { useState } from "react";
 
 
 //20.image-slider
-import { useState } from "react";
-
+//import { useState } from "react";
 // function App() {
 //   const images = [
 //     "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
@@ -783,7 +757,6 @@ import { useState } from "react";
 //       prevIndex === images.length - 1 ? 0 : prevIndex + 1
 //     );
 //   };
-//   // Previous Image
 //   const prevImage = () => {
 //     setCurrentIndex((prevIndex) =>
 //       prevIndex === 0 ? images.length - 1 : prevIndex - 1
@@ -836,7 +809,7 @@ import { useState } from "react";
 
 
 //21.productdropdown viewer
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 // function App() {
 //   const [products, setProducts] = useState([]);
 //   const [selectedProduct, setSelectedProduct] = useState("");
