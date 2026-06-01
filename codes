@@ -982,7 +982,79 @@
 
 
 
+//24 protected routing
 
-
-
+//import {useState, useEffect, useRef} from 'react'
+//
+//function App() {
+//  const [task, setTask] = useState("")
+//  const [list, setList] = useState(
+//    JSON.parse(localStorage.getItem("list")) || [])
+//
+//  const inputRef = useRef()
+//
+//  useEffect(()=>{
+//    localStorage.setItem("list", JSON.stringify(list))
+//  }, [list])
+//
+//
+//  function addHandler(){
+//    if(task.length != 0){
+//      let obj = {
+//      id: Date.now(),
+//      text: task
+//    }
+//    setList([...list, obj])
+//    setTask("")
+//    inputRef.current.focus()
+//    }
+//    
+//  }
+//
+//  function deleteHandler(id){
+//    let newArr = list.filter((val)=>{
+//      if(val.id == id){
+//        return false
+//      }
+//      return true
+//    })
+//    setList(newArr)
+//  }
+//
+//  function editHandler(id){
+//    let newTask = prompt("enter your new or updated task")
+//    let newArray = list.map((val)=>{
+//      if(val.id == id){
+//        val.text = newTask
+//      }
+//      return val
+//    })
+//    setList(newArray)
+//  }
+//  return (
+//    <div>
+//      <input type='text' 
+//        onChange={(event)=> setTask(event.target.value)}
+//        value={task}
+//        ref={inputRef}
+//      />
+//      <button onClick={addHandler}>Add</button>
+//
+//      <ul>
+//        {list.map((val, ind)=>{
+//          return (
+//            <li key={ind}>
+//              <span>{val.text}</span>
+//              <button onClick={()=> deleteHandler(val.id)}>Delete</button>
+//              <button onClick={()=> editHandler(val.id)}>Edit</button>
+//
+//            </li>
+//          )
+//        })}
+//      </ul>
+//    </div>
+//  )
+//}
+//
+//export default App
 
